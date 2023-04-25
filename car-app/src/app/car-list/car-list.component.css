@@ -1,0 +1,62 @@
+h2 {
+  margin: 30px;
+}
+select {
+  padding: 0.5rem;
+  margin-right: 0.5rem;
+  border-radius: 5px;
+  min-width: 100px;
+  margin-left: 16px;
+}
+
+.filters {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  font-family: "Segoe UI";
+}
+
+.btn {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding-top: 20px;
+  font-family: "Segoe UI";
+}
+
+button {
+  width: 120px;
+  height: 40px;
+  border-radius: 8px;
+}
+
+.card {
+  height: auto;
+  width: 25%;
+  box-shadow: 5px 10px 18px #888888;
+  border-radius: 5px;
+  font-family: "Segoe UI";
+  padding: 10px;
+  margin: 12px;
+}
+
+img {
+  width: -webkit-fill-available;
+  max-height: 220px;
+}
+
+.card-body {
+  padding: 0px 20px 0px 20px;
+}
+
+.display {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding-top: 30px;
+}
+
+h5,
+p {
+  margin: 5px 0px;
+}

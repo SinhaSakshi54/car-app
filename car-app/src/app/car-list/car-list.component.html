@@ -1,0 +1,43 @@
+<h2>Car Listing</h2>
+<div class="filters">
+  <div>
+    <label>Year:</label>
+    <select id="year" ngDefaultControl [(ngModel)]="yearFilter">
+      <option *ngFor="let year of years" [value]="year">{{ year }}</option>
+    </select>
+  </div>
+  <div>
+    <label>Make:</label>
+    <select id="make" ngDefaultControl [(ngModel)]="makeFilter">
+      <option *ngFor="let make of makeList" [value]="make">{{ make }}</option>
+    </select>
+  </div>
+  <div>
+    <label>Model:</label>
+    <select id="model" ngDefaultControl [(ngModel)]="modelFilter">
+      <option *ngFor="let model of modelList" [value]="model">
+        {{ model }}
+      </option>
+    </select>
+  </div>
+  <div>
+    <label>Price:</label>
+    <select id="price" ngDefaultControl [(ngModel)]="priceFilter">
+      <option *ngFor="let price of prices" [value]="price">{{ price }}</option>
+    </select>
+  </div>
+</div>
+<div class="btn">
+  <button (click)="filterCars()">Filter</button>
+  <button (click)="clearFilters()">Clear</button>
+</div>
+<div class="display">
+  <div class="card" *ngFor="let car of cars">
+    <img [src]="car.image" class="card-img-top" alt="Car Image" />
+    <div class="card-body">
+      <h5>{{ car.make }} - {{ car.model }}</h5>
+      <p>Price: {{ car.price }}</p>
+      <p>Year: {{ car.year }}</p>
+    </div>
+  </div>
+</div>
